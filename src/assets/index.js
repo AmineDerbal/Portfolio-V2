@@ -9,6 +9,9 @@ import concertHub from './concert-hub.png';
 import liveIcon from './live-icon.png';
 import MetricsWebapp from './Metrics-webapp.png';
 import spaceTravelersHub from './Space-traveler.png';
+import web from './web.png';
+import backend from './backend.png';
+import creator from './creator.png';
 
 export {
   logo,
@@ -22,4 +25,7 @@ export {
   liveIcon,
   MetricsWebapp,
   spaceTravelersHub,
+  web,
+  backend,
+  creator,
 };

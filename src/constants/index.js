@@ -1,4 +1,14 @@
-import { github, linkedin, medium, concertHub, MetricsWebapp, spaceTravelersHub } from '../assets';
+import {
+  github,
+  linkedin,
+  medium,
+  concertHub,
+  MetricsWebapp,
+  spaceTravelersHub,
+  web,
+  backend,
+  creator,
+} from '../assets';
 
 export const navLinks = [
   {
@@ -108,4 +118,83 @@ const projects = [
   },
 ];
 
-export { socialLinks, projects };
+const services = [
+  {
+    title: 'Frontend Developer',
+    icon: web,
+    skills: [
+      {
+        name: 'React',
+      },
+      {
+        name: 'Redux',
+      },
+      {
+        name: 'JavaScript',
+      },
+      {
+        name: 'NodeJS',
+      },
+      {
+        name: 'HTML',
+      },
+      {
+        name: 'CSS',
+      },
+      {
+        name: 'Jest',
+      },
+      {
+        name: 'Figma',
+      },
+    ],
+  },
+
+  {
+    title: 'Backend Developer',
+    icon: backend,
+    skills: [
+      {
+        name: 'Ruby on Rails',
+      },
+      {
+        name: 'PostgreSQL',
+      },
+      {
+        name: 'Ruby',
+      },
+      {
+        name: 'RSpec',
+      },
+      {
+        name: 'Capybara',
+      },
+      {
+        name: 'Selenium',
+      },
+    ],
+  },
+  {
+    title: 'Other Professional Skills',
+    icon: creator,
+    skills: [
+      {
+        name: 'Git',
+      },
+      {
+        name: 'GitHub',
+      },
+      {
+        name: 'Render,Netlify',
+      },
+      {
+        name: 'Remote Pair-Programming',
+      },
+      {
+        name: 'Dev Tools',
+      },
+    ],
+  },
+];
+
+export { socialLinks, projects, services };
