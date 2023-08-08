@@ -5,5 +5,21 @@ import medium from './medium.svg';
 import linkedin from './linkedin-icon.svg';
 import github from './github.svg';
 import angelList from './angel-list.svg';
+import concertHub from './concert-hub.png';
+import liveIcon from './live-icon.png';
+import MetricsWebapp from './Metrics-webapp.png';
+import spaceTravelersHub from './Space-traveler.png';
 
-export { logo, menu, close, medium, linkedin, github, angelList };
+export {
+  logo,
+  menu,
+  close,
+  medium,
+  linkedin,
+  github,
+  angelList,
+  concertHub,
+  liveIcon,
+  MetricsWebapp,
+  spaceTravelersHub,
+};
