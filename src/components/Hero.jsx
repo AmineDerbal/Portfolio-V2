@@ -37,19 +37,19 @@ const Hero = () => {
           className='flex flex-col justify-center items-center
         mt-5'
         >
-          <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-5 h-5 rounded-full bg-[#38ef7d]' />
+          <div className='w-1 sm:h-80 h-40 green-gradient' />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText}`}>
             <Typed
-              strings={['Hi, I&apos;m&nbsp;']}
+              strings={['Hi There, I&apos;m&nbsp;']}
               typeSpeed={40}
               showCursor={false}
               onComplete={() => setFirstTypingComplete(true)}
             />
             {firstTypingComplete && (
-              <span className='text-[#915eff]'>
+              <span className='text-[#38ef7d]'>
                 <Typed
                   strings={['Amine']}
                   typeSpeed={40}
@@ -75,7 +75,7 @@ const Hero = () => {
           )}
 
           {thirdTypingComplete && (
-            <p className='mt-3 text-secondary text-[17px] max-w-2xl leading-[30px]'>
+            <p className='mt-3 sub-text text-secondary text-[17px] max-w-2xl leading-[30px]'>
               <Typed
                 strings={[
                   'I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.',
@@ -87,7 +87,7 @@ const Hero = () => {
             </p>
           )}
           {forthTypingComplete && (
-            <div className=' mt-10 flex gap-5 items-center justify-center'>
+            <div className=' mt-10  flex gap-5 items-center justify-center'>
               {socialLinks.map((link) => (
                 <SocialLink key={link.id} {...link} />
               ))}
@@ -100,7 +100,7 @@ const Hero = () => {
         className='absolute xs:bottom-10
       bottom-32 w-full flex justify-center items-center'
       >
-        <a href='#about'>
+        <a href='#work'>
           <div
             className='w-[35px] h-[64px]
           rounded-3xl border-4 border-secondary
