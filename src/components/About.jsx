@@ -1,52 +1,34 @@
-import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import PropTypes from 'prop-types';
 import { styles } from '../styles';
+import { ServiceCard } from '../components';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import resume from '../../download';
 
-const ServiceCard = ({ index, title, icon, skills }) => {
-  return (
-    <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
-      className='xs:w-[350px] w-full h-auto'
-    >
-      <motion.div
-        variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-        className='w-full  green-pink-gradient p-[1px] h-full rounded-[20px] shadow-card'
-      >
-        <div className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[300px] h-full flex gap-5 items-center flex-col'>
-          <img src={icon} alt={title} className='w-16 h-16 object-contain' />
-
-          <h3 className='text-white text-[20px] min-h-[80px] xs:w-[150px] font-bold text-center'>
-            {title}
-          </h3>
-          <div className='flex flex-wrap justify-center gap-3'>
-            {skills.map((skill) => (
-              <span
-                key={`${skill.name}-{index}`}
-                className='bg-indigo-100 text-indigo-800 text-xs font-medium mr-.5 px-2.5 py-1.5 rounded dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400'
-              >
-                {skill.name}
-              </span>
-            ))}
-          </div>
-        </div>
-      </motion.div>
-    </Tilt>
-  );
-};
 const About = () => {
+  const changeBackground = (e) => {
+    e.target.closest('button').style.transform = 'scale(1.2)';
+  };
+
+  const resetBackground = (e) => {
+    e.target.closest('button').style.transform = 'scale(1)';
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'Resume.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About me.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
@@ -56,6 +38,23 @@ const About = () => {
         adept at working remotely and have the necessary communication and collaboration skills to
         excel in a virtual work environment.
       </motion.p>
+      <motion.div variants={fadeIn('', '', 0.1, 1)} className='mt-4'>
+        <button
+          className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded inline-flex items-center'
+          onMouseOver={changeBackground}
+          onMouseOut={resetBackground}
+          onClick={handleDownload}
+        >
+          <svg
+            className='fill-current w-4 h-4 mr-2'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 20 20'
+          >
+            <path d='M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z' />
+          </svg>
+          <span>Get my resume</span>
+        </button>
+      </motion.div>
       <div className='mt-20 flex flex-wrap w-full justify-center gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
@@ -63,17 +62,6 @@ const About = () => {
       </div>
     </>
   );
-};
-
-ServiceCard.propTypes = {
-  index: PropTypes.number,
-  title: PropTypes.string,
-  icon: PropTypes.string,
-  skills: PropTypes.shape([
-    {
-      name: PropTypes.string,
-    },
-  ]),
 };
 
 export default SectionWrapper(About, 'about');
