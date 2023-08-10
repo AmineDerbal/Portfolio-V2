@@ -8,6 +8,7 @@ import {
   web,
   backend,
   creator,
+  recipe,
 } from '../assets';
 
 export const navLinks = [
@@ -115,6 +116,28 @@ const projects = [
     image: spaceTravelersHub,
     source_code_link: 'https://github.com/AmineDerbal/Space-Travelers-Hub/',
     live_link: 'https://space-traveler-qf9m.onrender.com/',
+  },
+  {
+    name: 'Recipe App',
+    description:
+      'The rails-recipe-app is a classic example of a recipe website, that keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+    tags: [
+      {
+        name: 'Bootstrap',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'PostgreSQL',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Ruby on Rails',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: recipe,
+    source_code_link: 'https://github.com/AmineDerbal/rails-recipe',
+    live_link: 'https://rails-recipe-apj7.onrender.com/',
   },
 ];
 
