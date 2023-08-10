@@ -12,6 +12,7 @@ import spaceTravelersHub from './Space-traveler.png';
 import web from './web.png';
 import backend from './backend.png';
 import creator from './creator.png';
+import recipe from './recipe.png';
 
 export {
   logo,
@@ -28,4 +29,5 @@ export {
   web,
   backend,
   creator,
+  recipe,
 };
