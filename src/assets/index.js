@@ -13,6 +13,7 @@ import web from './web.png';
 import backend from './backend.png';
 import creator from './creator.png';
 import recipe from './recipe.png';
+import WeatherApp from './Weather-project.png';
 
 export {
   logo,
@@ -30,4 +31,5 @@ export {
   backend,
   creator,
   recipe,
+  WeatherApp,
 };
