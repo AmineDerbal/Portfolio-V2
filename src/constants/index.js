@@ -9,6 +9,7 @@ import {
   backend,
   creator,
   recipe,
+  WeatherApp,
 } from '../assets';
 
 export const navLinks = [
@@ -138,6 +139,28 @@ const projects = [
     image: recipe,
     source_code_link: 'https://github.com/AmineDerbal/rails-recipe',
     live_link: 'https://rails-recipe-apj7.onrender.com/',
+  },
+  {
+    name: 'Weather App',
+    description:
+      'A website that fetches the current weather from OpenWeatherMap API for the input city And display Them.',
+    tags: [
+      {
+        name: 'Express',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'JavaScript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: WeatherApp,
+    source_code_link: 'https://github.com/AmineDerbal/Weather-App/tree/main',
+    live_link: 'https://weather-app.cyberamined31.repl.co/',
   },
 ];
 
