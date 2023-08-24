@@ -14,6 +14,7 @@ import backend from './backend.png';
 import creator from './creator.png';
 import recipe from './recipe.png';
 import WeatherApp from './Weather-project.png';
+import mathMagician from './math-magician.png';
 
 export {
   logo,
@@ -32,4 +33,5 @@ export {
   creator,
   recipe,
   WeatherApp,
+  mathMagician,
 };
