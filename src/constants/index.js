@@ -10,6 +10,7 @@ import {
   creator,
   recipe,
   WeatherApp,
+  mathMagician,
 } from '../assets';
 
 export const navLinks = [
@@ -161,6 +162,28 @@ const projects = [
     image: WeatherApp,
     source_code_link: 'https://github.com/AmineDerbal/Weather-App/tree/main',
     live_link: 'https://weather-app.cyberamined31.repl.co/',
+  },
+  {
+    name: 'Math Magicians',
+    description:
+      'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote. This project is Built using React front end framework.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'JavaScript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: mathMagician,
+    source_code_link: 'https://github.com/AmineDerbal/Math-Magicians-React',
+    live_link: 'https://math-magician-zppr.onrender.com/',
   },
 ];
 
