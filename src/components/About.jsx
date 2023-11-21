@@ -7,24 +7,6 @@ import { SectionWrapper } from '../hoc';
 import resume from '../../download';
 
 const About = () => {
-  const changeBackground = (e) => {
-    e.target.closest('button').style.transform = 'scale(1.2)';
-  };
-
-  const resetBackground = (e) => {
-    e.target.closest('button').style.transform = 'scale(1)';
-  };
-
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = resume;
-    link.download = 'Resume.pdf';
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <>
       <motion.div variants={textVariant()}>
