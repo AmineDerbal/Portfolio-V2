@@ -4,7 +4,6 @@ import { ServiceCard } from '../components';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import resume from '../../download';
 
 const About = () => {
   return (
