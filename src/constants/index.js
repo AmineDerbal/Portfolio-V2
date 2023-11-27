@@ -11,6 +11,7 @@ import {
   recipe,
   WeatherApp,
   mathMagician,
+  clarifion,
 } from '../assets';
 
 export const navLinks = [
@@ -44,11 +45,6 @@ const socialLinks = [
     url: 'https://medium.com/@aminedoran31/what-are-3-pieces-of-advice-that-you-would-give-someone-whos-just-beginning-their-journey-with-45e7cf980c5d',
     icon: medium,
   },
-  // {
-  //   name: 'AngelList',
-  //   url: 'https://angel.co/u/mohammed-el-amine-derbal',
-  //   icon: 'angelList',
-  // },
 ];
 
 const projects = [
@@ -73,6 +69,28 @@ const projects = [
     image: concertHub,
     source_code_link: 'https://github.com/Stephen-Adom/concert-react-front-end',
     live_link: 'https://concert-react-front-end.vercel.app/',
+  },
+  {
+    name: 'CLarifion',
+    description:
+      ' clarifion-upsell This react project is about coverting a Figma Design into a web app while maintaining the design for both the desktop and mobile versions.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Redux',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: clarifion,
+    source_code_link: 'https://github.com/AmineDerbal/clarifion-upsell',
+    live_link: 'https://clarifion-et2h.onrender.com/',
   },
   {
     name: 'Metrics webapp',
