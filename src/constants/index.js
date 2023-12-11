@@ -12,6 +12,7 @@ import {
   WeatherApp,
   mathMagician,
   clarifion,
+  HomeNovel,
 } from '../assets';
 
 export const navLinks = [
@@ -48,6 +49,27 @@ const socialLinks = [
 ];
 
 const projects = [
+  {
+    name: 'HomeNovel',
+    description:
+      'A desktop App scrapper built with Electron and NextJs, utilizing Puppeteer to scrape stories from ScribbleHub website and download it as PDF (still in development).',
+    tags: [
+      {
+        name: 'Electron',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'NextJS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'SQLite',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: HomeNovel,
+    source_code_link: 'https://github.com/AmineDerbal/home-Novel-nextron-V2',
+  },
   {
     name: 'ConcertHub',
     description:
