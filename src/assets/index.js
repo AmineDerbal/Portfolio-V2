@@ -16,6 +16,7 @@ import recipe from './recipe.png';
 import WeatherApp from './Weather-project.png';
 import mathMagician from './math-magician.png';
 import clarifion from './clarifion.png';
+import HomeNovel from './Home-novel.png';
 
 export {
   logo,
@@ -36,4 +37,5 @@ export {
   WeatherApp,
   mathMagician,
   clarifion,
+  HomeNovel,
 };
