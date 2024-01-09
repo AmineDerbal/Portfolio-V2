@@ -9,10 +9,14 @@ const SocialLink = ({ name, url, icon }) => {
   return (
     <div
       onClick={() => window.open(url, '_blank')}
-      className=' w-10 h-10 rounded-full flex justify-center items-center cursor-pointer-center
-    items-center cursor-pointer'
+      className=" w-10 h-10 rounded-full flex justify-center items-center cursor-pointer-center
+    items-center cursor-pointer"
     >
-      <img src={icon} alt={name} className='w-1/2 h-1/2 object-contain' />
+      <img
+        src={icon}
+        alt={name}
+        className="w-1/2 h-1/2 object-contain"
+      />
     </div>
   );
 };
@@ -25,8 +29,8 @@ const Hero = () => {
 
   return (
     <section
-      className='relative w-full h-screen
-    mx-auto'
+      className="relative w-full h-screen
+    mx-auto"
     >
       <div
         className={`${styles.paddingX} absolute inset-0
@@ -34,11 +38,11 @@ const Hero = () => {
       items-start gap-5`}
       >
         <div
-          className='flex flex-col justify-center items-center
-        mt-5'
+          className="flex flex-col justify-center items-center
+        mt-5"
         >
-          <div className='w-5 h-5 rounded-full bg-[#38ef7d]' />
-          <div className='w-1 sm:h-80 h-40 green-gradient' />
+          <div className="w-5 h-5 rounded-full bg-[#38ef7d]" />
+          <div className="w-1 sm:h-80 h-40 green-gradient" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText}`}>
@@ -49,7 +53,7 @@ const Hero = () => {
               onComplete={() => setFirstTypingComplete(true)}
             />
             {firstTypingComplete && (
-              <span className='text-[#38ef7d]'>
+              <span className="text-[#38ef7d]">
                 <Typed
                   strings={['Amine']}
                   typeSpeed={40}
@@ -75,7 +79,7 @@ const Hero = () => {
           )}
 
           {thirdTypingComplete && (
-            <p className='mt-3 sub-text text-secondary text-[17px] max-w-2xl leading-[30px]'>
+            <p className="mt-3 sub-text text-secondary text-[17px] max-w-2xl leading-[30px]">
               <Typed
                 strings={[
                   'I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.',
@@ -87,9 +91,12 @@ const Hero = () => {
             </p>
           )}
           {forthTypingComplete && (
-            <div className=' mt-10  flex gap-5 items-center justify-center'>
+            <div className=" mt-10  flex gap-5 items-center justify-center">
               {socialLinks.map((link) => (
-                <SocialLink key={link.id} {...link} />
+                <SocialLink
+                  key={link.id}
+                  {...link}
+                />
               ))}
             </div>
           )}
@@ -97,14 +104,14 @@ const Hero = () => {
       </div>
 
       <div
-        className='absolute xs:bottom-10
-      bottom-32 w-full flex justify-center items-center'
+        className="absolute xs:bottom-8
+      bottom-12 w-full flex justify-center items-center"
       >
-        <a href='#work'>
+        <a href="#work">
           <div
-            className='w-[35px] h-[64px]
+            className="w-[35px] h-[64px]
           rounded-3xl border-4 border-secondary
-          flex justify-center items-start p-2'
+          flex justify-center items-start p-2 mt-20"
           >
             <motion.div
               animate={{
@@ -115,8 +122,8 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: 'loop',
               }}
-              className='w-3 h-3 rounded-full bg-secondary
-              mb-1'
+              className="w-3 h-3 rounded-full bg-secondary
+              mb-1"
             />
           </div>
         </a>
