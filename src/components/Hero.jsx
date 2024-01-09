@@ -105,7 +105,7 @@ const Hero = () => {
 
       <div
         className="absolute xs:bottom-8
-      bottom-12 w-full flex justify-center items-center"
+      bottom-14 w-full flex justify-center items-center"
       >
         <a href="#work">
           <div
