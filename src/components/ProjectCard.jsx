@@ -51,7 +51,7 @@ const ProjectCard = ({
                 />
               </div>
             )}
-            {source_code_gitlab && (
+            {live_link && (
               <div
                 onClick={() => window.open(live_link, '_blank')}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer-center
