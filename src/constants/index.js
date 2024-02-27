@@ -13,6 +13,7 @@ import {
   mathMagician,
   clarifion,
   HomeNovel,
+  gitlab,
 } from '../assets';
 
 export const navLinks = [
@@ -35,6 +36,11 @@ const socialLinks = [
     name: 'Github',
     url: 'https://github.com/AmineDerbal',
     icon: github,
+  },
+  {
+    name: 'GitLab,',
+    url: 'https://gitlab.com/AmineDerbal',
+    icon: gitlab,
   },
   {
     name: 'LinkedIn',
@@ -157,6 +163,7 @@ const projects = [
     ],
     image: spaceTravelersHub,
     source_code_link: 'https://github.com/AmineDerbal/Space-Travelers-Hub/',
+    source_code_gitlab: 'https://gitlab.com/AmineDerbal/space-travelers-hub',
     live_link: 'https://space-traveler-qf9m.onrender.com/',
   },
   {
