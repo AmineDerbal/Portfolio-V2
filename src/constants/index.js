@@ -75,6 +75,7 @@ const projects = [
     ],
     image: HomeNovel,
     source_code_link: 'https://github.com/AmineDerbal/home-Novel-nextron-V2',
+    source_code_gitlab: 'https://gitlab.com/AmineDerbal/home-novel',
   },
   {
     name: 'ConcertHub',
@@ -118,6 +119,7 @@ const projects = [
     ],
     image: clarifion,
     source_code_link: 'https://github.com/AmineDerbal/clarifion-upsell',
+    source_code_gitlab: 'https://gitlab.com/AmineDerbal/clarifion-upsell',
     live_link: 'https://clarifion-et2h.onrender.com/',
   },
   {
@@ -140,6 +142,7 @@ const projects = [
     ],
     image: MetricsWebapp,
     source_code_link: 'https://github.com/AmineDerbal/React-Capstone-project',
+    source_code_gitlab: 'https://gitlab.com/AmineDerbal/metrics-webapp',
     live_link: 'https://idyllic-semifreddo-83ba58.netlify.app/',
   },
 
