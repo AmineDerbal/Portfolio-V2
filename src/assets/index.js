@@ -17,6 +17,7 @@ import WeatherApp from './Weather-project.png';
 import mathMagician from './math-magician.png';
 import clarifion from './clarifion.png';
 import HomeNovel from './Home-novel.png';
+import gitlab from './gitlab.svg';
 
 export {
   logo,
@@ -38,4 +39,5 @@ export {
   mathMagician,
   clarifion,
   HomeNovel,
+  gitlab,
 };
