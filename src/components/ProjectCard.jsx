@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 import PropTypes from 'prop-types';
 import { fadeIn } from '../utils/motion';
-import { github, liveIcon } from '../assets';
+import { github, liveIcon, gitlab } from '../assets';
 
 const ProjectCard = ({
   index,
@@ -11,6 +11,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  source_code_gitlab,
   live_link,
 }) => {
   return (
@@ -37,7 +38,20 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-            {live_link && (
+            {source_code_gitlab && (
+              <div
+                onClick={() => window.open(source_code_gitlab, '_blank')}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer-center
+              items-center cursor-pointer"
+              >
+                <img
+                  src={gitlab}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
+            {source_code_gitlab && (
               <div
                 onClick={() => window.open(live_link, '_blank')}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer-center
@@ -78,6 +92,7 @@ ProjectCard.propTypes = {
   tags: PropTypes.array,
   image: PropTypes.string,
   source_code_link: PropTypes.string,
+  source_code_gitlab: PropTypes.string,
   live_link: PropTypes.string,
 };
 
