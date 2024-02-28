@@ -189,6 +189,7 @@ const projects = [
     ],
     image: recipe,
     source_code_link: 'https://github.com/AmineDerbal/rails-recipe',
+    source_code_gitlab: 'https://gitlab.com/AmineDerbal/recipe-app',
     live_link: 'https://rails-recipe-apj7.onrender.com/',
   },
   {
