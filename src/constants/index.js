@@ -14,6 +14,7 @@ import {
   clarifion,
   HomeNovel,
   gitlab,
+  hardwareApp,
 } from '../assets';
 
 export const navLinks = [
@@ -55,6 +56,28 @@ const socialLinks = [
 ];
 
 const projects = [
+  {
+    name: 'Hardware Ecommerce',
+    description:
+      'An ecommerce website project that allows to display add and order electronic pc hardware , built with Laravel and VueJS (still in development).',
+    tags: [
+      {
+        name: 'Pinia',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'VueJS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Laravel',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: hardwareApp,
+    source_code_link:
+      'https://github.com/AmineDerbal/laravel-hardware-ecommerce',
+  },
   {
     name: 'HomeNovel',
     description:
