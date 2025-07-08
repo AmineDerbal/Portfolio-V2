@@ -244,6 +244,12 @@ const services = [
     icon: web,
     skills: [
       {
+        name: 'Vue3',
+      },
+      {
+        name: 'Pinia',
+      },
+      {
         name: 'React',
       },
       {
@@ -274,6 +280,9 @@ const services = [
     title: 'Backend Developer',
     icon: backend,
     skills: [
+      {
+        name: 'Laravel',
+      },
       {
         name: 'Ruby on Rails',
       },
