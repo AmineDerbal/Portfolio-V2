@@ -287,6 +287,9 @@ const services = [
         name: 'Ruby on Rails',
       },
       {
+        name: 'MySQL',
+      },
+      {
         name: 'PostgreSQL',
       },
       {
