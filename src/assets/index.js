@@ -18,6 +18,7 @@ import mathMagician from './math-magician.png';
 import clarifion from './clarifion.png';
 import HomeNovel from './Home-novel.png';
 import gitlab from './gitlab.svg';
+import hardwareApp from './hardware-screenshot.png';
 
 export {
   logo,
@@ -40,4 +41,5 @@ export {
   clarifion,
   HomeNovel,
   gitlab,
+  hardwareApp,
 };
